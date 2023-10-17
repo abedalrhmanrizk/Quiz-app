@@ -102,7 +102,7 @@ function App() {
   );
 
   useEffect(() => {
-    fetch('http://localhost:3001/questions')
+    fetch('http://localhost:5001/questions')
       .then((res) => res.json())
       .then((data) =>
         dispatch({ type: 'dataReceived', payload: data })
